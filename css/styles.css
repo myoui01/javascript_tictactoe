@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  color: #f6f6f6;
+  font-family: "Roboto", sans-serif;
+  background-color: #171821;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.logo {
+  font-weight: 100;
+  margin-top: 10px;
+  font-size: 35px;
+}
+
+ul {
+  border-bottom: 0.3px solid #21222D;
+}
+
+.botao {
+  background-color: #21222D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #2c2d3a;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-top: -5px;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.social-icons {
+  padding-top: 50px;
+  margin-left: auto;
+  list-style-type: none;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 18px;
+  height: auto;
+}
+
+.card-container {
+  display: flex;
+  margin-top: -5px;
+  flex-direction: column;
+  font-weight: 300;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box; 
+}
+
+.navbar {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  box-sizing: border-box; 
+}
+
+.navbar .left, .navbar .center, .navbar .right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .left {
+  flex: 1;
+  margin-left: 50px;
+}
+
+.navbar .center {
+  flex: 1;
+  justify-content: center;
+}
+
+.navbar .right {
+  flex: 1;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.navbar div {
+  font-size: 18px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.game-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #21222D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #21222D;
+  cursor: pointer;
+}
